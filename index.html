@@ -6,6 +6,16 @@
     <title>CESF - Educação de Qualidade</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <script>
+    // Seu código GSAP aqui
+  </script>
+</body>
+</html>
+
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -17,10 +27,10 @@
             <ul>
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
-                <li><a href="#courses">Cursos</a></li>
-                <li><a href="#space">Nosso Espaço</a></li>
-                <li><a href="#achievements">Conquistas</a></li>
-                <li><a href="#events">Eventos</a></li>
+                <li><a href="#courses">Segmentos</a></li>
+                <li><a href="#space">Estrutura</a></li>
+                <li><a href="#achievements">Aprovações</a></li>
+                <li><a href="#events">Noticias</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
@@ -31,7 +41,7 @@
         <div class="overlay"></div>
         <div class="hero-content">
             <h1>Bem-vindo ao CESF</h1>
-            <p>Somos uma escola comprometida com a excelência acadêmica e o desenvolvimento integral dos alunos, oferecendo uma estrutura moderna com recursos tecnológicos, ambientes interativos e foco em valores como inclusão, respeito e habilidades socioemocionais, preparando-os para os desafios futuros.
+            <p>Somos uma escola comprometida com a excelência acadêmica e o desenvolvimento integral dos alunos, oferecendo uma estrutura moderna com recursos tecnológicos, ambientes interativos e foco em valores como inclusão, respeito e habilidades socioemocionais.
 
 </p>
             <div class="hero-buttons">
@@ -39,7 +49,7 @@
     <a href="#courses" class="cta">Segmentos</a>
     <a href="#space" class="cta"> Estrutura</a>
     <a href="#achievements" class="cta">Aprovações</a>
-    <a href="#events" class="cta">Eventos</a>
+    <a href="#events" class="cta">Noticias</a>
     <a href="#contact" class="cta">Contato</a>
 </div>
         </div>
@@ -76,7 +86,6 @@
         </div>
     </div>
 </section>
-
     <!-- Seção de Seguimentos -->
     <section id="courses" class="courses">
         <h2>Nossos Segmentos</h2>
@@ -131,31 +140,56 @@
                 <h3>Escolas Tecnicas</h3>
                 <p>Diversas aprovações em concursos de instituições como FIRJAN, CEFET, FAETEC, IFRJ e SESC.</p>
             </div>
+    </section>
+    <section id="achievements" class="achievements">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/aprovados1.jpg" alt="Aprovado 1"></div>
+            <div class="swiper-slide"><img src="images/aprovados2.jpg" alt="Aprovado 2"></div>
+            <div class="swiper-slide"><img src="images/aprovados3.jpg" alt="Aprovado 3"></div>
+            <div class="swiper-slide"><img src="images/aprovados4.jpg" alt="Aprovado 4"></div>
+            <div class="swiper-slide"><img src="images/aprovados5.jpg" alt="Aprovado 1"></div>
+            <div class="swiper-slide"><img src="images/aprovados6.jpg" alt="Aprovado 2"></div>
+            <div class="swiper-slide"><img src="images/aprovados7.jpg" alt="Aprovado 3"></div>
+            <div class="swiper-slide"><img src="images/aprovados8.jpg" alt="Aprovado 4"></div>
         </div>
+        <!-- Botões de navegação -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
     </section>
 
     <!-- Seção de Eventos -->
-    <section id="events" class="events">
-        <h2>Eventos</h2>
-        <div class="events-gallery">
-            <div class="event-card">
-                <img src="images/cesf1.jpg" alt="Evento 1">
-                <p>Descrição do evento 1...</p>
+  <section id="events" class="events">
+    <h2>Noticias</h2>
+    <div class="swiper eventsSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/evento1.jpg" alt="Evento 1">
+                <p>Encantos de Parintins: Confira como foi nosso evento.</p>
             </div>
-            <div class="event-card">
-                <img src="images/cesf2.jpg" alt="Evento 2">
-                <p>Descrição do evento 2...</p>
+            <div class="swiper-slide">
+                <img src="images/evento2.jpg" alt="Evento 2">
+                <p>Cafe Literario: Confira nosso primeiro evento do ano.</p>
             </div>
-            <div class="event-card">
-                <img src="images/cesf3.jpg" alt="Evento 3">
-                <p>Descrição do evento 3...</p>
-            </div>
-            <div class="event-card">
-                <img src="images/cesf4.jpg" alt="Evento 4">
-                <p>Descrição do evento 4...</p>
+            <div class="swiper-slide">
+                <img src="images/evento3.jpg" alt="Evento 3">
+                <p>Festaneja</p>
             </div>
         </div>
-    </section>
+        <!-- Botões de navegação -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<section id="location" class="location">
+    <h2>Localização</h2>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3676.4411431418225!2d-43.2564742!3d-22.8601568!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997bffbd298123%3A0x8158b26f0850c7db!2sCESF%20Centro%20Educacional%20Silva%20Florencio%20-%20Unidade%20Bonsucesso!5e0!3m2!1spt-BR!2sbr!4v1737068214236!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
 
     <!-- Seção de Contato -->
     <section id="contact" class="contact">
@@ -186,5 +220,7 @@
             <img src="images/zap.png" alt="WhatsApp CESF">
         </a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
-</html>
+    </html>
